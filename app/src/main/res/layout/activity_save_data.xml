@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveDataActivity"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:background="@drawable/bg_outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_centerVertical="true"
+            android:id="@+id/spinnerData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="0.8"
+            tools:listitem="@layout/item_spinner"
+            android:scrollbars="vertical"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
